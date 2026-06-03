@@ -482,3 +482,19 @@ if (document.fonts && document.fonts.ready) document.fonts.ready.then(syncAboutP
 applyLang("zh");
 observeReveals();
 syncAboutPortrait();
+
+/* Download-CV links: if the PDF isn't in the project yet, don't 404 —
+   route the click to the Contact section instead. Once the file exists
+   (HEAD 200), the links behave as normal downloads. */
+(async () => {
+  const cvLinks = document.querySelectorAll('a[href$="Yuchen-Gao-CV.pdf"]');
+  if (!cvLinks.length) return;
+  let exists = false;
+  try { exists = (await fetch(cvLinks[0].getAttribute("href"), { method: "HEAD" })).ok; } catch (e) {}
+  if (exists) return; // real file present → leave native download behavior
+  cvLinks.forEach((a) => a.addEventListener("click", (e) => {
+    e.preventDefault();
+    const c = document.getElementById("contact");
+    if (c) c.scrollIntoView({ behavior: "smooth" });
+  }));
+})();

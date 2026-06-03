@@ -88,6 +88,15 @@ module.exports = async function handler(req, res) {
   if (typeof body === "string") {
     try { body = JSON.parse(body); } catch { body = null; }
   }
+  // Fallback: if the platform didn't pre-parse the JSON body, read the raw stream.
+  if (body == null && typeof req.on === "function") {
+    body = await new Promise((resolve) => {
+      let raw = "";
+      req.on("data", (c) => { raw += c; if (raw.length > 1e6) { try { req.destroy(); } catch {} resolve(null); } });
+      req.on("end", () => { try { resolve(raw ? JSON.parse(raw) : null); } catch { resolve(null); } });
+      req.on("error", () => resolve(null));
+    });
+  }
   const incoming = body && Array.isArray(body.messages) ? body.messages : null;
   if (!incoming) return res.status(400).json({ error: "bad_request" });
 

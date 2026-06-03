@@ -120,7 +120,7 @@
       zh: "会的——她每天用 AI（Claude、ChatGPT、Nation AI）加速研究、整合与报告，还自己搭建了对话式金融 AI 智能体（供应商付款查询＋内部费用报销）：涵盖知识梳理、对话流程设计、KPI 框架与 UAT 测试。可在 ygfinanceai.fun 体验 ✨",
     },
     {
-      keys: ["good fit", "fit for", "suitable", "right fit", "right person", "fit", "适合", "合适", "胜任", "对口"],
+      keys: ["good fit", "fit for", "suitable", "right fit", "right person", "适合", "合适", "胜任", "对口"],
       en: "Strong fit for consumer / marketing / brand-strategy roles ✨ real consulting at Landor (WPP) with an adopted UnionPay audit, end-to-end consumer-insight work (Clarins: a 69-respondent study → funnel), trend forecasting, and data + AI fluency. Want me to point you to the most relevant project?",
       zh: "面向消费者／市场／品牌策略类岗位，她非常契合 ✨ 朗涛 Landor（WPP）真实咨询（银联审计被采纳）、端到端消费者洞察（Clarins：69 人调研→漏斗）、趋势预测，以及数据＋AI 能力。需要我推荐最相关的项目吗？",
     },
