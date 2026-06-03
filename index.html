@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yuchen Gao — Bilingual Brand Strategist</title>
+  <meta name="description" content="Yuchen Gao (高语辰) — bilingual brand strategist turning cultural insight into commercial strategy." />
+
+  <!-- Fonts: Fontshare (Clash Display, Switzer, Sentient) + Google (Fraunces fallback) -->
+  <link rel="preconnect" href="https://api.fontshare.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!-- Preload the two display faces -->
+  <link rel="preload" as="style" href="https://api.fontshare.com/v2/css?f[]=clash-display@600,700&f[]=switzer@400,500&f[]=sentient@400i,400&display=swap" />
+  <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=clash-display@600,700&f[]=switzer@400,500&f[]=sentient@400i,400&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@1,9..144,400&display=swap" />
+
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="assistant.css" />
+</head>
+<body>
+  <!-- Faint full-page grain overlay -->
+  <div class="page-grain" aria-hidden="true"></div>
+
+  <!-- ============ TOP NAV ============ -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#hero" class="logotype" data-i18n="nav.logo">＋ Yuchen Gao.</a>
+
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#about"      data-i18n="nav.about">About</a>
+        <a href="#work"       data-i18n="nav.work">Work</a>
+        <a href="#experience" data-i18n="nav.experience">Experience</a>
+        <a href="#skills"     data-i18n="nav.skills">Skills</a>
+        <a href="#contact"    data-i18n="nav.contact">Contact</a>
+      </nav>
+
+      <div class="nav__tools">
+        <button class="lang-toggle" id="langToggle" aria-label="Switch language">
+          <span class="lang-en">EN</span><span class="lang-sep">/</span><span class="lang-zh is-active">中</span>
+        </button>
+        <a href="#contact" class="circle-arrow" aria-label="Go to contact">↗</a>
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ MOBILE OVERLAY MENU ============ -->
+  <div class="overlay-menu" id="overlayMenu" aria-hidden="true">
+    <nav class="overlay-menu__links" aria-label="Mobile">
+      <a href="#about"      data-i18n="nav.about">About</a>
+      <a href="#work"       data-i18n="nav.work">Work</a>
+      <a href="#experience" data-i18n="nav.experience">Experience</a>
+      <a href="#skills"     data-i18n="nav.skills">Skills</a>
+      <a href="#contact"    data-i18n="nav.contact">Contact</a>
+    </nav>
+  </div>
+
+  <main>
+    <!-- ============ (00) HERO ============ -->
+    <section class="hero" id="hero">
+      <div class="hero__mesh" aria-hidden="true"></div>
+      <div class="hero__grain" aria-hidden="true"></div>
+
+      <div class="hero__center container">
+        <!-- Alt headline: replace with "Portfolio" if preferred -->
+        <h1 class="hero__title reveal" data-i18n="hero.name">高语辰.</h1>
+        <!-- <h1 class="hero__title reveal">Portfolio</h1> -->
+        <p class="hero__positioning reveal" data-i18n="hero.positioning">
+          Bilingual brand strategist — turning cultural insight into commercial strategy.
+        </p>
+        <div class="hero__buttons reveal">
+          <a href="#work" class="btn btn--pill"><span data-i18n="hero.viewWork">View work</span> <span class="glyph">→</span></a>
+          <a href="assets/Yuchen-Gao-CV.pdf" class="btn btn--pill" download><span data-i18n="hero.downloadCV">Download CV</span> <span class="glyph">↓</span></a>
+        </div>
+      </div>
+
+      <div class="hero__meta container">
+        <span>ygportfolio.xyz</span>
+        <span data-i18n="hero.metaPortfolio">Portfolio — 2026</span>
+        <span class="hero__meta-lang">EN / 中</span>
+      </div>
+    </section>
+
+    <!-- ============ (01) STATEMENT / INTRO ============ -->
+    <section class="statement" id="statement">
+      <div class="container">
+        <p class="section-index">(01)</p>
+        <h2 class="statement__line reveal">
+          <span data-i18n="statement.a">I turn culture into</span>
+          <em class="serif" data-i18n="statement.b">brand strategy</em><span data-i18n="statement.c">.</span>
+        </h2>
+        <p class="statement__sub muted reveal" data-i18n="statement.sub">
+          Consumer insight, competitive audit and content built to move brands between China and the West.
+        </p>
+        <div class="statement__strip reveal">
+          <div class="thumb" data-label="Clarins"><img src="assets/work/clarins/cover.jpg" alt="" loading="lazy" onerror="this.classList.add('img--missing')" /></div>
+          <div class="thumb" data-label="Lifestyle"><img src="assets/work/lifestyle/cover.jpg" alt="" loading="lazy" onerror="this.classList.add('img--missing')" /></div>
+          <div class="thumb" data-label="绿马 × 携程"><img src="assets/work/lvma-ctrip/cover.jpg" alt="" loading="lazy" onerror="this.classList.add('img--missing')" /></div>
+          <div class="thumb" data-label="WEBL"><img src="assets/work/webl/cover.jpg" alt="" loading="lazy" onerror="this.classList.add('img--missing')" /></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ (02) ABOUT ============ -->
+    <section class="about" id="about">
+      <div class="container about__grid">
+        <div class="about__portrait reveal">
+          <div class="portrait" data-label="Portrait">
+            <img src="assets/portrait.jpg" alt="Portrait of Yuchen Gao" loading="lazy" onerror="this.classList.add('img--missing')" />
+          </div>
+        </div>
+        <div class="about__body reveal">
+          <p class="section-index">(02)</p>
+          <h2 class="section-title" data-i18n="about.title">About</h2>
+          <p class="about__bio" data-i18n="about.bio">
+            I'm Yuchen Gao, a Fashion Marketing &amp; Content Creation student at UAL (GPA 3.9), graduating in 2027. I work where consumer insight meets brand strategy — and I'm bilingual and bicultural, so I can run strategy natively for brands moving between China and the West.
+          </p>
+          <p class="about__bio about__bio2" data-i18n="about.bio2">
+            Beyond the analysis, I'm a structured problem-solver who pairs rigorous research with creative execution. As UALCSSA President I've led four cross-functional teams, negotiated brand partnerships and delivered 17 events at 100% execution — and I move fast with modern AI tools, equally at home turning data into strategy and strategy into a story that lands in two markets.
+          </p>
+          <ul class="chips" aria-label="Key facts">
+            <li class="chip" data-i18n="about.chip1">UAL · GPA 3.9</li>
+            <li class="chip" data-i18n="about.chip2">ex-Landor (WPP)</li>
+            <li class="chip" data-i18n="about.chip3">Bilingual EN/中文</li>
+            <li class="chip" data-i18n="about.chip4">Beauty · Luxury · Travel</li>
+          </ul>
+          <a href="assets/Yuchen-Gao-CV.pdf" class="btn btn--pill" download><span data-i18n="hero.downloadCV">Download CV</span> <span class="glyph">↓</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ (03) WHAT I DO / STRENGTHS ============ -->
+    <section class="strengths" id="strengths">
+      <div class="container">
+        <p class="section-index">(03)</p>
+        <h2 class="section-title" data-i18n="strengths.title">What I do</h2>
+        <div class="pillars">
+          <article class="pillar reveal">
+            <span class="pillar__num">01</span>
+            <h3 data-i18n="strengths.p1.title">Insight &amp; Research</h3>
+            <p data-i18n="strengths.p1.body">Primary research, netnography, data.</p>
+            <p class="pillar__proof muted" data-i18n="strengths.p1.proof">69-respondent study; netnography across RED / Threads / TikTok.</p>
+          </article>
+          <article class="pillar reveal">
+            <span class="pillar__num">02</span>
+            <h3 data-i18n="strengths.p2.title">Brand Strategy</h3>
+            <p data-i18n="strengths.p2.body">Positioning, competitive audit, campaign architecture.</p>
+            <p class="pillar__proof muted" data-i18n="strengths.p2.proof">Landor payments audit adopted into a client's 2026 brand strategy.</p>
+          </article>
+          <article class="pillar reveal">
+            <span class="pillar__num">03</span>
+            <h3 data-i18n="strengths.p3.title">Content &amp; Culture</h3>
+            <p data-i18n="strengths.p3.body">Trend forecasting, content &amp; IP creative.</p>
+            <p class="pillar__proof muted" data-i18n="strengths.p3.proof">STEPIC trend forecast; 绿马 × 携程 IP pitch.</p>
+          </article>
+          <article class="pillar reveal">
+            <span class="pillar__num">04</span>
+            <h3 data-i18n="strengths.p4.title">AI &amp; Intelligent Marketing</h3>
+            <p data-i18n="strengths.p4.body">Hands-on AI use, plus AI-driven, intelligent-terminal marketing.</p>
+            <p class="pillar__proof muted" data-i18n="strengths.p4.proof">AI-accelerated audits at Landor; multi-platform KOL marketing across Douyin / Kuaishou / RED.</p>
+          </article>
+        </div>
+      </div>
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee__track">
+          <span>Tableau — Power BI — SQL — Excel — Figma/Canva — Claude — ChatGPT —&nbsp;</span>
+          <span>Tableau — Power BI — SQL — Excel — Figma/Canva — Claude — ChatGPT —&nbsp;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ (04) SELECTED WORK ============ -->
+    <section class="work" id="work">
+      <div class="container">
+        <div class="work__head">
+          <h2 class="section-title serif"><em data-i18n="work.title">Selected Work</em></h2>
+          <p class="section-index">(04) — <span data-i18n="work.count">5 projects</span></p>
+        </div>
+
+        <div class="work__grid" id="workGrid">
+          <!-- Cards injected by script.js from the PROJECTS dictionary -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ (05) EXPERIENCE ============ -->
+    <section class="experience" id="experience">
+      <div class="container">
+        <p class="section-index">(05)</p>
+        <h2 class="section-title" data-i18n="experience.title">Experience</h2>
+        <ul class="timeline" id="timeline"><!-- rendered by script.js from the EXPERIENCE data --></ul>
+      </div>
+    </section>
+
+    <!-- ============ (06) SKILLS & RECOGNITION ============ -->
+    <section class="skills" id="skills">
+      <div class="container skills__grid">
+        <div class="reveal">
+          <p class="section-index">(06)</p>
+          <h2 class="section-title" data-i18n="skills.title">Skills</h2>
+          <dl class="skills__list">
+            <div class="skills__group">
+              <dt data-i18n="skills.biz">Business & Strategy</dt>
+              <dd data-i18n="skills.bizList">Competitive analysis · Consumer-insight research · Strategic reporting · Cross-functional collaboration</dd>
+            </div>
+            <div class="skills__group">
+              <dt data-i18n="skills.data">Data tools & models</dt>
+              <dd data-i18n="skills.dataList">Excel (Pivot Table / Lookup) · Power BI · Tableau · SQL</dd>
+            </div>
+            <div class="skills__group">
+              <dt data-i18n="skills.design">Design & presentation</dt>
+              <dd data-i18n="skills.designList">PowerPoint · Adobe Photoshop · Canva</dd>
+            </div>
+            <div class="skills__group">
+              <dt data-i18n="skills.lang">Languages</dt>
+              <dd data-i18n="skills.langList">English (fluent, written & spoken) · 中文</dd>
+            </div>
+          </dl>
+        </div>
+        <div class="reveal">
+          <p class="section-index" aria-hidden="true">&nbsp;</p>
+          <h2 class="section-title" data-i18n="skills.recognition">Recommendation & Certificates</h2>
+          <ul class="recognition">
+            <li data-i18n="skills.rec1">Recommendation letter — Landor (WPP) China GM</li>
+            <li data-i18n="skills.rec2">Internship certificate — Nanjing Dahui Enterprise Group (Marketing)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ (07) CONTACT ============ -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <p class="section-index">(07)</p>
+        <h2 class="contact__line serif reveal" data-i18n="contact.title">Let's work together.</h2>
+        <div class="contact__links reveal">
+          <a href="mailto:gaoyuchen2022uk@163.com" class="contact__link">gaoyuchen2022uk@163.com</a>
+          <span class="contact__sep">·</span>
+          <span class="contact__link" data-i18n="contact.wechat">WeChat: yuchen_L2827</span>
+          <span class="contact__sep">·</span>
+          <a href="tel:+8615895972827" class="contact__link">+86 158 9597 2827</a>
+        </div>
+        <a href="assets/Yuchen-Gao-CV.pdf" class="btn btn--pill" download><span data-i18n="hero.downloadCV">Download CV</span> <span class="glyph">↓</span></a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER META STRIP ============ -->
+  <footer class="footer">
+    <div class="container footer__strip">
+      <span>ygportfolio.xyz</span>
+      <span data-i18n="footer.portfolio">Portfolio 2026</span>
+      <span data-i18n="footer.available">Available for work</span>
+    </div>
+  </footer>
+
+  <!-- ============ WORK DETAIL MODAL ============ -->
+  <div class="modal" id="modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal__backdrop" data-close></div>
+    <div class="modal__panel" role="document">
+      <button class="modal__close" data-close aria-label="Close">✕</button>
+      <div class="modal__content" id="modalContent">
+        <!-- Filled by script.js -->
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+  <!-- ============ AI ASSISTANT WIDGET (self-contained) ============ -->
+  <div id="assistant-root"></div>
+  <script src="assistant.js"></script>
+</body>
+</html>
