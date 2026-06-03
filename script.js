@@ -35,7 +35,7 @@ const I18N = {
     "strengths.p3.proof": "STEPIC trend forecast; 绿马 × 携程 IP pitch.",
     "strengths.p4.title": "AI & Intelligent Marketing",
     "strengths.p4.body": "Practical, hands-on command of AI tools (Claude, ChatGPT, Nation AI) to accelerate research, synthesis and reporting — plus a working grasp of AI-driven, intelligent-terminal marketing: smart-channel content and multi-platform KOL distribution.",
-    "strengths.p4.proof": "AI-accelerated competitive audits at Landor (WPP); multi-platform influencer marketing across Douyin / Kuaishou / RED.",
+    "strengths.p4.proof": "AI-accelerated audits at Landor (WPP); multi-platform KOL marketing on Douyin / Kuaishou / RED.",
 
     "work.title": "Selected Work", "work.count": "4 projects",
 
@@ -97,7 +97,7 @@ const I18N = {
     "strengths.p3.proof": "STEPIC 趋势预测；绿马 × 携程 IP 提案。",
     "strengths.p4.title": "AI 与智能营销",
     "strengths.p4.body": "扎实的 AI 工具实战能力（Claude、ChatGPT、Nation AI），用于加速研究、整合与报告产出；并理解与实践 AI 驱动的智能终端营销——智能渠道内容与多平台达人分发。",
-    "strengths.p4.proof": "Landor（WPP）AI 加速竞品审计；横跨抖音 / 快手 / 小红书的多平台达人营销。",
+    "strengths.p4.proof": "Landor（WPP）AI 加速竞品审计；抖音 / 快手 / 小红书多平台达人营销。",
 
     "work.title": "精选作品", "work.count": "4 个项目",
 

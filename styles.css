@@ -392,7 +392,7 @@ html[lang="zh"] .statement__line .serif{ font-style: normal; }
   margin-bottom: 0.75rem;
 }
 .pillar p{ margin-bottom: 0.75rem; }
-.pillar__proof{ font-size: 0.95rem; border-left: 2px solid var(--accent); padding-left: 1rem; }
+.pillar__proof{ font-size: 0.95rem; border-left: 2px solid var(--accent); padding-left: 1rem; text-wrap: pretty; }
 
 /* marquee */
 .marquee{ overflow: hidden; margin-top: clamp(3rem, 6vw, 5rem); border-block: 1px solid var(--line); padding-block: 1rem; }
